@@ -1,0 +1,47 @@
+<!--DOCUMENT html-->
+<html>
+    <head>
+        <title>Payment_Form</title> 
+        <style>
+            body{
+            background-color: silver;
+        }
+        </style>
+    </head>
+    <body>
+        <form action="">
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+            <p>Name: <input type="text" name="Name"</p> 
+        <fieldset>   
+            <legend>Gender</legend> 
+        <p>
+    Male <input type="radio" name="gender" id="male">
+ Female <input type="radio" name="gender" id="female">
+         </p>
+         </fieldset> 
+         <fieldset>
+             <legend>Address</legend>
+         <p>
+         Address:  <textarea name="address" id="address " cols="30 rows="10"></textarea> 
+         </p></fieldset>
+         <p>Email: * <input type="email" name="email" id="email" required ></p>
+         <p>Pincode: * <input type="number" name="pincode" id="number" required></p>
+         <p>Card Type: *
+            <select name="card_type" id="card_type" required> 
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">visa</option>
+                <option value="rupey">rupey</option>
+                <option value="master">master</option> 
+            </select>
+            <p> Card Number: <input type="number" name="card_number" id="card_number"></p>
+            <p>Expiration Date : *<input type="date" name="exp_date" id="exp_date" required>
+           </p>
+           <p> CVV <input type="password" name="CVV" id="CVV" required></p>
+           <input type="submit" value="Pay Now">
+        </form>  
+        <footer>
+         <a href="index.html"><input type="submit" value="Return"></a>
+        </footer>  
+    </body>
+</html>
